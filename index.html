@@ -391,6 +391,24 @@ permalink: /
         padding: 1.6rem;
       }
 
+      .form-embed {
+        margin-top: 1rem;
+      }
+
+      .mobile-form-card {
+        display: none;
+        margin-top: 1rem;
+        padding: 1.25rem;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+        background: rgba(255,255,255,0.9);
+        box-shadow: var(--shadow);
+      }
+
+      .mobile-form-card p {
+        margin-bottom: 1rem;
+      }
+
       .contact-list {
         display: grid;
         gap: 0.8rem;
@@ -449,16 +467,37 @@ permalink: /
           justify-content: space-between;
           overflow-x: auto;
           padding-bottom: 0.2rem;
+          gap: 0.9rem;
+          font-size: 0.9rem;
         }
         .hero { padding-top: 3rem; }
         .hero-visual { min-height: 390px; }
         .panel-main { inset: 0 0 2rem 0; }
-        
         .panel-badge {
           max-width: 215px;
           padding: 0.9rem;
         }
+        h1 {
+          font-size: clamp(2.7rem, 14vw, 4.2rem);
+        }
         h2 { font-size: 1.9rem; }
+        .big-cta {
+          width: 100%;
+          justify-content: center;
+        }
+        .button-secondary {
+          width: 100%;
+          justify-content: center;
+        }
+        .contact-card {
+          padding: 1.2rem;
+        }
+        .form-embed {
+          display: none;
+        }
+        .mobile-form-card {
+          display: block;
+        }
       }
     
       /* lightbox */
@@ -763,7 +802,14 @@ permalink: /
             <p>
               If you’ve got a project in mind, fill out the form below and tell us a bit about the job. The more detail you can share up front, the easier it is to point you in the right direction.
             </p>
-            <div style="margin-top:1rem;">
+            <div class="mobile-form-card">
+              <h3 style="margin-bottom:0.6rem;">Quick quote request</h3>
+              <p>
+                On mobile, it’s easier to open the form on its own page so it fills the screen properly.
+              </p>
+              <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdT7B-dDIPm97cQcJ4-13xlnCj9yhMiFgieGgqeRHDGouRG2Q/viewform" target="_blank" rel="noreferrer">Open enquiry form</a>
+            </div>
+            <div class="form-embed">
               <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdT7B-dDIPm97cQcJ4-13xlnCj9yhMiFgieGgqeRHDGouRG2Q/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0" style="border-radius:16px; border:1px solid var(--line); background:white;">
                 Loading…
               </iframe>
