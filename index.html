@@ -14,7 +14,18 @@ permalink: /
       content="Sydney-based carpentry team specialising in decks, pergolas, balconies, timber features, and quality outdoor builds."
     />
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-  </head>
+  <style>
+/* Mobile hero size reduction */
+@media (max-width: 720px) {
+  .hero { padding: 2rem 0 1.25rem; }
+  .hero-grid { gap: 1rem; }
+  .hero-visual { min-height: 220px; }
+  .panel-main { inset: 0 0 1rem 0; }
+  h1 { font-size: clamp(2rem, 10vw, 2.6rem); }
+  .cta-row { margin-bottom: 1rem; }
+}
+</style>
+</head>
   <body>
     <header class="site-header">
       <div class="container nav">
